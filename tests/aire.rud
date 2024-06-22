@@ -1,0 +1,39 @@
+ini opx opr iso dmp chx chb
+
+push chx 3.14159265359 ; PI
+push chx 4 ; Radius
+
+mov chb chx
+mov dmp chx
+nb
+mov chx chb
+clr dmp
+mov chx iso
+
+gst function start clear
+    clr opx opr
+
+    avd
+    gst function end clear
+
+gst function start reset_all
+    clr opx opr iso dmp chx chb
+    res opx opr iso dmp chx chb
+
+    avd
+    gst function end reset_all
+
+cop chx chx
+mov opx chx
+mov opr chx
+add
+gst call clear nan
+mov opx iso
+mov opr chx
+mul
+gst call clear nan
+mov dmp iso
+out
+gst call reset_all nan
+
+end

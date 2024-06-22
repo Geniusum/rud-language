@@ -1,0 +1,78 @@
+ini opx opr iso flx dmp stk max
+
+push stk 13 1
+push flx 2
+push dmp H e l l o , 32 W o r l d !
+
+chr
+pop dmp
+mov opr iso
+
+chr
+pop dmp
+mov opx iso
+
+add
+
+jmp 30
+
+mov flx iso
+cpa dmp flx
+clr flx iso opx opr
+res flx iso opx opr
+out
+jmp 70
+
+
+
+
+
+; START FUNC ITERATE
+
+mov max stk
+mov opr stk
+mov opx flx
+cs 19
+upr 19
+mov stk opr
+mov opr max
+add
+pop opx
+mov flx iso
+mov stk opr
+jmp 53
+
+; END FUNC ITERATE
+
+
+
+
+
+
+
+; START FUNC ADDCHAR
+
+pop opr opx
+mov opr iso
+
+chr
+pop dmp
+mov opx iso
+
+add
+jmp 30
+
+; END FUNC ADDCHAR
+
+
+
+
+
+
+
+
+
+
+
+
+

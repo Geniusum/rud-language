@@ -1,0 +1,11 @@
+ini dmp chx ; On va utiliser la stack chx pour stocker notre nombre d'entré
+
+gst function start PRINTNB ; Fonction permettant d'afficher le dernier nombre entré en argument
+mov dmp fi ; On bouge le nombre mit en argument vers dmp pour pouvoir l'afficher
+out ; Affichage du nombre
+
+avd ; Doit y être pour bien terminer la fonction
+gst function end PRINTNB ; Finaliser la définition de la fonction
+
+push chx 7 ; On met 7 en entrée
+gst call PRINTNB chx ; On appelle la fonction en passant chx aux arguments

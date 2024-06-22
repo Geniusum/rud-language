@@ -1,0 +1,5 @@
+ini dmp chx iso
+push chx 1 2 3 4 4
+gst stklen chx
+mov dmp iso
+out

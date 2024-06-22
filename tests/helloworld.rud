@@ -1,0 +1,38 @@
+ini opx opr iso flx dmp stk max
+push stk 13 1
+push flx 2
+push dmp H e l l o , 32 W o r l d !
+chr
+pop dmp
+mov opr iso
+chr
+pop dmp
+mov opx iso
+add
+jmp 17
+mov flx iso
+cpa dmp flx
+out
+jmp 36
+mov max stk
+mov opr stk
+mov opx flx
+cs 13
+upr 13
+mov stk opr
+mov opr max
+add
+pop opx
+mov flx iso
+mov stk opr
+jmp 29
+pop opr opx
+mov opr iso
+chr
+pop dmp
+mov opx iso
+add
+jmp 17
+clr opx opr iso flx dmp stk max
+res opx opr iso flx dmp stk max
+end

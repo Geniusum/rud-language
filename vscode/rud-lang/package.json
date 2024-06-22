@@ -1,0 +1,26 @@
+{
+  "name": "rud",
+  "displayName": "RUD",
+  "description": "RUD Programming Language",
+  "version": "0.0.1",
+  "publisher": "Genius_um",
+  "engines": {
+    "vscode": "^1.51.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "rud",
+      "aliases": ["RUD Programming Language", "rud"],
+      "extensions": [".rud"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "rud",
+      "scopeName": "source.rud",
+      "path": "./syntaxes/rud.tmLanguage.json"
+    }]
+  }
+}

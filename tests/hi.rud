@@ -1,0 +1,14 @@
+ini opx opr iso flx dmp
+push dmp H I
+chr
+pop dmp
+mov opr iso
+chr
+pop dmp
+mov opx iso
+add
+mov flx iso
+cpa dmp flx
+clr flx iso opx opr
+res flx iso opx opr
+out

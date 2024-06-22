@@ -1,0 +1,90 @@
+ini opx opr iso flx dmp stk max
+push flx 2
+push dmp Enter 32 your 32 name 32 : 32
+gst stklen dmp
+mov stk iso
+push stk 1
+pass
+chr
+pop dmp
+mov opr iso
+chr
+pop dmp
+mov opx iso
+add
+jmp 20
+mov flx iso
+cpa dmp flx
+out
+jmp 39
+mov max stk
+mov opr stk
+mov opx flx
+cs 16
+upr 16
+mov stk opr
+mov opr max
+add
+pop opx
+mov flx iso
+mov stk opr
+jmp 32
+pop opr opx
+mov opr iso
+chr
+pop dmp
+mov opx iso
+add
+jmp 20
+pass
+pop dmp opx opx opr opr max flx
+; Input part
+in
+mov dmp iso
+pass
+chr
+pass
+pop dmp
+; Response part
+push flx 2
+push dmp Your 32 name 32 is 32
+mov dmp iso
+gst stklen dmp
+mov stk iso
+push stk 1
+pass
+chr
+pop dmp
+mov opr iso
+chr
+pop dmp
+mov opx iso
+add
+jmp 68
+mov flx iso
+cpa dmp flx
+out
+jmp 87
+mov max stk
+mov opr stk
+mov opx flx
+cs 64
+upr 64
+mov stk opr
+mov opr max
+add
+pop opx
+mov flx iso
+mov stk opr
+jmp 80
+pop opr opx
+mov opr iso
+chr
+pop dmp
+mov opx iso
+add
+jmp 68
+pass
+pop dmp opx opx opr opr max flx
+
+end

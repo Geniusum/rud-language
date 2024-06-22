@@ -1,0 +1,33 @@
+ini iso dmp chx chy chz opx opr
+fill chx chy chz dmp
+pop chx chy dmp dmp
+pass
+push chx 0
+push chy 1
+
+; //* FUNC FIB
+
+cop opx chx
+push dmp 10
+chr
+pop dmp
+mov opr iso
+add
+pop opx opr
+mov dmp iso
+out
+pop dmp dmp
+
+mov opx chx
+mov opr chy
+add
+pop chz
+mov chz iso
+pop opx
+mov chx opr
+cop chy chz
+jmp 8
+
+; //* END FUNC FIB
+
+end

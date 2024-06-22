@@ -1,0 +1,2 @@
+gst inject *std.rud*
+gst call greet nan

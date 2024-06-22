@@ -1,0 +1,9 @@
+ini iso dmp
+in
+mov dmp iso
+pass
+chr
+pass
+mov dmp iso
+out
+end

@@ -1,0 +1,18 @@
+; Initialisation des piles
+ini opx
+ini opr
+ini iso dmp
+
+; Empile des valeurs dans opx et opr
+push opx 5
+push opr 10
+
+; Additionne les valeurs de opx et opr, et empile le résultat dans iso
+add
+
+; Imprime le résultat de iso
+mov dmp iso
+out
+
+; Fin du programme
+end

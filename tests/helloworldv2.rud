@@ -1,0 +1,42 @@
+ini opx opr iso flx dmp stk max
+push flx 2
+push dmp Hello, 32 World!
+gst stklen dmp
+mov stk iso
+push stk 1
+pass
+chr
+pop dmp
+mov opr iso
+chr
+pop dmp
+mov opx iso
+add
+jmp 20
+mov flx iso
+cpa dmp flx
+out
+jmp 39
+mov max stk
+mov opr stk
+mov opx flx
+cs 16
+upr 16
+mov stk opr
+mov opr max
+add
+pop opx
+mov flx iso
+mov stk opr
+jmp 32
+pop opr opx
+mov opr iso
+chr
+pop dmp
+mov opx iso
+add
+jmp 20
+clr opx opr iso flx dmp stk max
+res opx opr iso flx dmp stk max
+pass
+end

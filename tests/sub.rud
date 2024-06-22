@@ -1,0 +1,9 @@
+ini opx opr dmp iso
+push opx 10
+push dmp 4
+rev
+mov opr iso
+add
+mov dmp iso
+out
+end
