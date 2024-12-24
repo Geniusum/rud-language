@@ -1,0 +1,43 @@
+ini opx opr iso dmp
+
+mov dmp arg
+nb
+mov opx iso
+push opr 1
+upr 27
+push opr 0
+lwr 31
+mov opr opx
+
+mov dmp arg
+nb
+mov opx iso
+push opr 1
+upr 35
+push opr 0
+lwr 39
+pop opr
+pop opr
+
+mul
+mov dmp iso
+out
+jmp 43
+
+pop opx
+push opx 1
+jmp 8
+
+pop opx
+push opx 0
+jmp 10
+
+pop opx
+push opx 1
+jmp 17
+
+pop opx
+push opx 0
+jmp 19
+
+end
